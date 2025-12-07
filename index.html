@@ -54,7 +54,7 @@
 
     <!--about-->
     <section class="about" id="About">
-      <h2>About <span>Me</span></h2>
+      <h2 class="section-title"><span>About </span>Me</h2>
       <div class="about-container">
         <div class="about-img">
           <img src="character.png" alt="" />
@@ -125,11 +125,12 @@
       <h2 class="section-title">My <span>Project</span></h2>
       <div class="project-container">
         <div class="project-card">
+          <img src="assets/sertifikat.png" alt="Sertifikat Dicoding" />
           <div class="project-info">
             <h3>Sertifikat Dicoding</h3>
             <p>
               Sertifikat ini diberikan kepada peserta yang telah menyelesaikan
-              kelas belajar dasar HTML & CSS di Dicoding
+              kelas belajar dasar HTML & CSS di Dicoding.
             </p>
             <a
               href="https://www.dicoding.com/certificates/QLZ96Q957Z5D"
@@ -137,9 +138,10 @@
               >Visit</a
             >
           </div>
-          <img src="assets/sertifikat.png" alt="" />
         </div>
+
         <div class="project-card">
+          <img src="assets/logo.png" alt="Logo Instagram" />
           <div class="project-info">
             <h3>Logo Instagram</h3>
             <p>
@@ -153,15 +155,16 @@
               >Visit</a
             >
           </div>
-          <img src="assets/logo.png" alt="" />
         </div>
+
         <div class="project-card">
+          <img src="assets/gojo.jpg" alt="Illustrasi Gojo" />
           <div class="project-info">
             <h3>Illustrasi Gojo</h3>
             <p>
               Ilustrasi vektor bergaya minimalis terinspirasi dari desain
               karakter anime modern. Dibuat dengan garis tegas dan warna datar
-              untuk menonjolkan ekspresi serta bentuk karakter
+              untuk menonjolkan ekspresi serta bentuk karakter.
             </p>
             <a
               href="https://www.instagram.com/portofolio.dhika/p/DOfiKwjERMI/"
@@ -169,40 +172,47 @@
               >Visit</a
             >
           </div>
-          <img src="assets/gojo.jpg" alt="" />
         </div>
       </div>
     </section>
 
-    <!--form-->
+    <!-- Contact Form -->
     <section class="contact-section" id="contact">
       <div class="contact-container">
-        <h2 class="title-section"><span>Contact</span> Me</h2>
+        <h2 class="section-title"><span>Contact</span> Me</h2>
         <form
           class="contact-form"
           action="https://formspree.io/f/mpweypqa"
           method="POST"
         >
-          <input type="text" name="name" placeholder="Your Name..." required />
           <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your Name..."
+            required
+          />
+          <input
+            id="email"
             type="email"
             name="email"
             placeholder="Your Email..."
             required
           />
           <textarea
+            id="message"
             name="message"
             placeholder="Your Message..."
             required
           ></textarea>
-          <button type="submit" class="btn-send">Send</button>
+          <button id="CTA" type="submit" class="btn-send">Send</button>
         </form>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer-container">
-        <p>&copy; 2025 Kadek Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Kadek Ardhika Portfolio. All rights reserved.</p>
       </div>
     </footer>
 
@@ -211,5 +221,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
